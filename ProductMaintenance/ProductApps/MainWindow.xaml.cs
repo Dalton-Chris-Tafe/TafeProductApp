@@ -37,6 +37,9 @@ namespace ProductApps
 
                 //Calc total charge after adding shipping cost
                 totalChargeTextBox.Text = (cProduct.TotalPayment + 25).ToString("C");
+
+                //Calc total charge after adding wrap cost & shipping cost
+                totalChargeAfterWrapTextBox.Text = (cProduct.TotalPayment + 25 + 5).ToString("C");
             }
             catch (FormatException)
             {
