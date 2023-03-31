@@ -9,11 +9,14 @@
         <Label Content="Total Payment $:" HorizontalAlignment="Left" Height="30" Margin="46,160,0,0" VerticalAlignment="Top" Width="96"/>
         <TextBlock Name="totalPaymentTextBlock" HorizontalAlignment="Left" Height="23" Margin="164,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
 
-        <Label Content="Total Charge after adding &#xA;the delivery charge ($25):" HorizontalAlignment="Left" Height="46" Margin="10,189,0,0" VerticalAlignment="Top" Width="148"/>
-        <TextBox Name="totalChargeTextBox" HorizontalAlignment="Left" Height="23" Margin="168,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Total Charge after adding &#xA;the delivery charge ($25):" HorizontalAlignment="Left" Height="46" Margin="25,190,0,0" VerticalAlignment="Top" Width="148"/>
+        <TextBox Name="totalChargeTextBox" HorizontalAlignment="Left" Height="23" Margin="196,202,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
 
-        <Label Content="Total Charge after adding &#xA;the Wrap charge ($5):" HorizontalAlignment="Left" Height="46" Margin="10,226,0,0" VerticalAlignment="Top" Width="148"/>
-        <TextBox Name="totalChargeAfterWrapTextBox" HorizontalAlignment="Left" Height="23" Margin="168,239,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Total Charge after adding &#xA;the Wrap charge ($5):" HorizontalAlignment="Left" Height="46" Margin="25,227,0,0" VerticalAlignment="Top" Width="148"/>
+        <TextBox Name="totalChargeAfterWrapTextBox" HorizontalAlignment="Left" Height="23" Margin="196,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+
+        <Label Content="Total Charge after GST @10%:" HorizontalAlignment="Left" Height="46" Margin="15,273,0,0" VerticalAlignment="Top" Width="176"/>
+        <TextBox Name="totalChargeAfterGSTTextBox" HorizontalAlignment="Left" Height="23" Margin="196,275,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
 
         <TextBox Name="productTextBox" HorizontalAlignment="Left" Height="24" Margin="122,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
         <TextBox Name="priceTextBox" HorizontalAlignment="Left" Height="24" Margin="122,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77"/>

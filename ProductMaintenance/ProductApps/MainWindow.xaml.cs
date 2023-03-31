@@ -27,8 +27,11 @@ namespace ProductApps
             InitializeComponent();
         }
 
+        private decimal GST = 1.10m;
+
         private void calculateButton_Click(object sender, RoutedEventArgs e)
         {
+            
             try
             {
                 cProduct = new Product(Convert.ToDecimal(priceTextBox.Text), Convert.ToInt16(quantityTextBox.Text));
@@ -40,6 +43,11 @@ namespace ProductApps
 
                 //Calc total charge after adding wrap cost & shipping cost
                 totalChargeAfterWrapTextBox.Text = (cProduct.TotalPayment + 25 + 5).ToString("C");
+
+                //Calc total charge after adding wrap cost & shipping cost + GST @10%
+                decimal totalCharge = cProduct.TotalPayment + 25 + 5;
+
+                totalChargeAfterGSTTextBox.Text = (totalCharge * GST).ToString("C");
             }
             catch (FormatException)
             {
